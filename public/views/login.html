@@ -1,0 +1,18 @@
+<div class="container">
+
+  <div class="container">
+
+      <div class="jumbotron text-center">
+          <h1><span class="fa fa-lock"></span> Log in</h1>
+
+          <p>Login or Register with:</p>
+
+          <a href="/auth/google" class="btn btn-danger"><span class="fa fa-google-plus"></span> Google</a>
+          <a ui-sref="localLogin" class="btn btn-default"><span class="fa fa-user"></span> Local Login</a>
+          <a ui-sref="signup" class="btn btn-default"><span class="fa fa-user"></span> Local Signup</a><br>
+          <label>Zip:</label>
+          <input ng-model="zip"/>
+          <button ng-click="getCity(zip)">Get city</button>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,16 @@
+h1 {
+    text-align: center;
+}
+div {
+  text-align: center;
+  margin: auto;
+}
+ul {
+  display: flex;
+}
+li {
+  order: 1;
+  flex-grow: 1;
+  font-size: 20px;
+  list-style-type: none;
+}

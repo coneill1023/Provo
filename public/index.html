@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <title>Provo</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <meta charset="utf-8">
+  </head>
+  <body ng-controller="mainController">
+      <h1 ng-show="cityLookUp">Welcome to {{cityLookUp}} city</h1>
+      <h1 ng-show="invalid">{{invalid}}</h1>
+        <a href='http://www.accuweather.com/en/us/' class="aw-widget-legal"></a>
+        <div id="awcc1469293220772" class="aw-widget-current"  data-locationkey="331215" data-unit="f" data-language="en-us" data-useip="false" data-uid="awcc1469293220772"></div>
+      <ui-view></ui-view>
+
+    <script src="js/app.js"></script>
+    <script src="js/mainController.js"></script>
+    <script src="js/ApiService.js"></script>
+    <script src="js/mainService.js"></script>
+    <script src="js/route.js"></script>
+    <script src="directives/navbar/navbar.js"></script>
+  </body>
+</html>
